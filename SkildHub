@@ -17,7 +17,7 @@ sorry i rushed this in a few hours lol
 
 ]]
 
-local win = lib:Create("Skild Hub | Blade Ball","by NPC-Q8")
+local win = lib:Create("Skild Hub","by NPC-Q8")
 local a = win:tab("Main",false)
 local b = win:tab("Scripts",false)
 
@@ -599,7 +599,7 @@ end)
     print("Button Pressed")
 end)
 
-b:button("Fps Name Player",function() --//Made by Blissful#4992
+b:button("Fps Name Player",function() 
 local settings = {
     Color = Color3.fromRGB(0.0980392, 0.0980392, 0.0980392),
     Size = 8,
@@ -707,5 +707,9 @@ game.Players.PlayerAdded:Connect(function(newplr)
     end
     coroutine.wrap(ESP)()
 end)
+    print("Button Pressed")
+end)
+
+b:button("Infinite Yield",function() loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))()
     print("Button Pressed")
 end)
